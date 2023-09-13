@@ -1,40 +1,67 @@
 \documentclass[10pt]{article}
 \usepackage[margin=3cm]{geometry}
 
+\usepackage{bibentry}
 \usepackage{array, xcolor}
 \definecolor{lightgray}{gray}{0.8}
 \newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\newcommand{\ignore}[1]{}
 
 \title{\bfseries\Huge Sam A. Markelon}
 \author{
   markelon@protonmail.com\\
-  smarky7cd.github.io
+  %smarky7cd.github.io
 }
 \date{}
 
 \begin{document}
+
+\nobibliography{pubs}
+\bibliographystyle{unsrt}
+
 \maketitle
 
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
   2020--\quad&{\bf PhD in Computer Science, University of Florida}\\
-  		     &\quad Florida Institute for Cybersecurity Research\\[5pt]
+  		     &\quad Florida Institute for Cybersecurity Research\\
+           &\quad Advisor: Thomas Shrimpton\\[5pt]
   2016--2020&{\bf BS in Computer Science, University of Connecticut}\\
             &\quad Minor in Mathematics \\
             &\quad Summa Cum Laude\\
-            &\quad Honors Scholar
+            &\quad Honors Scholar\\
+            &\quad Upsilon Pi Epsilon
 \end{tabular}
 
 \section*{Professional Experience}
 \begin{tabular}{L!{\VRule}R}
+  Summer 2023&{\bf NCC Group (New York, NY)}\\
+             &\quad Cryptography Services Intern\\
+  %% Removing undergraduate internships
+  \ignore{
   Summer 2019&{\bf NCC Group (New York, NY)}\\
              &\quad Cryptography Services Intern\\[5pt]
   Summer 2018&{\bf Institut de Physique Nucléaire d'Orsay (Orsay, France)}\\
              &\quad Scientific Computing Intern\\[5pt]
   Summer 2017&{\bf Jefferson National Laboratory (Newport News, VA)}\\
              &\quad Software Engineering Intern
+  }
+  % end ignore block
+\end{tabular}
+
+\section*{Awards and Grants}
+\begin{tabular}{L!{\VRule}R}
+  2023&{\bf ThinkSwiss Research Scholarship}\\
+      &\quad Academic Guest for Fall 2023 with Prof. Kenneth Paterson's\\ 
+      &\quad Applied Cryptography Group at ETH Zürich.\\[5pt]
+  2023&{\bf Gartner Group Graduate Fellowship}\\[5pt]
+  2020&{\bf University of Florida Graduate School Preeminence Award}\\[5pt]
+  2019&{\bf Barry M. Goldwater Scholarship}\\[5pt]
+  2018&{\bf University of Connecticut IDEA Grant}\\
+      &\quad NTRUEncrypt implementation and usage research.\\[5pt]
+  2016&{\bf University of Connecticut STEM Scholar}
 \end{tabular}
 
 \section*{Teaching Experience}
@@ -47,52 +74,35 @@ All as undergraduate teaching assistant at the University of Connecticut.\\[5pt]
   Fall 2018&{\bf CSE 2050: Data Structures and Object Oriented Programming}\\
 \end{tabular}
 
-\section*{Awards and Grants}
-\begin{tabular}{L!{\VRule}R}
-  2020&{\bf University of Florida Graduate School Preeminence Award}\\[5pt]
-  2019&{\bf Barry M. Goldwater Scholarship}\\[5pt]
-  2018&{\bf University of Connecticut IDEA Grant}\\
-      &\quad NTRUEncrypt implementation and usage research.\\[5pt]
-  2016&{\bf University of Connecticut STEM Scholar}
-\end{tabular}
-
 \section*{Publications}
 \begin{enumerate}
   
 \subsection*{Journal and Conference Papers}
 
-\item {\bf The DecCert PKI: A Solution to Decentralized Identity Attestation and Zooko's Triangle}\\
-Sam A. Markelon and John True.\\
-IEEE DAPPs 2022\\
+\item \bibentry{mfs23}
+
+
+\item \bibentry{mt22}\\
 \textit{Best Paper Award}.
 
-\item {\bf A Semi-Quantum Extended B92 Protocol and its Analysis}\\
-Walter O. Krawec and Sam A. Markelon. \\
-Proc. SPIE 11391, Quantum Information Science, Sensing, and Computation XII, (24 April 2020).
+\item \bibentry{km20}
 
 
-\item {\bf Genetic Algorithm to Study Practical Quantum Adversaries}\\
-  W.O. Krawec and S.A. Markelon.\\
-  ACM GECCO (2018) Kyoto Japan, pages 1270-1277.
+\item \bibentry{km18}
 
 \subsection*{Posters and Poster Papers}
 
-\item {\bf Discovery of Robust Protocols for Secure Quantum Cryptography}\\
-  W.O Krawec and S.A. Markelon.\\
-  ACM GECCO (2019) New York, NY, pages 379-380.
+\item \bibentry{km19}
 
-\item {\bf gemcWeb: A Cloud Based Nuclear Physics Simulation Software}\\
-  Sam A. Markelon.\\
-  APS DNP CEU Poster Session, Fall 2017.
+\item \bibentry{m17}
 
 \subsection*{Preprints}
 
-\item {\bf Covert Message Passing over Public Internet Platforms Using Model-Based Format-Transforming Encryption}\\
-  Luke A. Bauer, James K. Howes IV, Sam A. Markelon, Vincent Bindschaedler, and Thomas Shrimpton.\\
-  arXiv:2110.07009.
-
+\item \bibentry{bhmbs22}
 \end{enumerate}
 
+%% remove undergraduate extracurricular activities
+\ignore{
 \section*{Extracurricular Activities}
 \begin{itemize}
 
@@ -103,7 +113,7 @@ Proc. SPIE 11391, Quantum Information Science, Sensing, and Computation XII, (24
 
 \item {\bf UConn Mixed Martial Arts Club}\\
 \quad Vice President, Treasurer
-
 \end{itemize}
-
+}
+% end ignore block
 \end{document}
