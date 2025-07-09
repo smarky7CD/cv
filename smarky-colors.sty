@@ -1,0 +1,38 @@
+% Encoding and color
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\definecolor{navy}{RGB}{35, 57, 91}
+\definecolor{gold}{RGB}{168, 143, 42}
+\definecolor{offwhite}{RGB}{255, 255, 248}
+
+% Page background is offwhite
+\usepackage{pagecolor}
+\pagecolor{offwhite}
+
+% Main text color is navy
+\color{navy}
+
+% Section styling in gold
+\usepackage{sectsty}
+\allsectionsfont{\color{gold}}
+
+% Hyperlinks in gold
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=gold,
+  urlcolor=gold,
+  citecolor=gold
+}
+
+% Emphasis text in gold
+\renewcommand{\emph}[1]{\textit{\textcolor{gold}{#1}}}
+
+% Optional: comment out if not desired
+
+% Font
+\usepackage[T1]{fontenc}
+\usepackage{libertinus}
+
+% Margins
+%\usepackage[margin=1in]{geometry}
